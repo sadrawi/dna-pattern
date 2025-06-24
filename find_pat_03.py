@@ -58,9 +58,6 @@ if st.button("Find the Patterns"):
     st.write(s_df)
 
     datap3=[]
-    
-    p_pos2 = []
-    l_pair2 = []
     for i in range(0,s_df.shape[0]):
         datap2 =[]
         seq2 = []
