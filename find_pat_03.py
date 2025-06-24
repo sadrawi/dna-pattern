@@ -4,12 +4,10 @@ import pandas as pd
 from PIL import Image
 
 st.set_page_config(
-    page_title="AI System",
+    page_title="Find DNA Pattern",
     layout="wide",
     initial_sidebar_state="auto"
 )
-
-# image = Image.open('i3l_logo.png')
 
 col1, col2 = st.columns([1,3])
 # with col1:
@@ -28,7 +26,6 @@ patterns = [pattern1,pattern2]
 
 p_pos = []
 all_pats = []
-all_ind = []
 if st.button("Find the Patterns"):
 
     for i in range(0,len(patterns)):
@@ -39,7 +36,7 @@ if st.button("Find the Patterns"):
         # st.write(f'PosPat: {patterns[i]}: {str(pos_all)}')
 
         data = {
-        # 'id': i,
+        'id': i,
         'sequence': patterns[i],
         'index': pos_all
         }
@@ -47,7 +44,3 @@ if st.button("Find the Patterns"):
 
     # df = pd.DataFrame(data)
     st.dataframe(all_pats, use_container_width=True)
-
-    print(all_pats)
-    
-
