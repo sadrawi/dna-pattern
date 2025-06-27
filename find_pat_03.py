@@ -38,8 +38,8 @@ if st.button("Find the Patterns"):
     for i in range(0,len(p_pos)):
         l_pair.append(p_pos[i][1]-p_pos[i][0])
         s_pair.append(fasta[p_pos[i][0]:p_pos[i][1]])
-    st.write(f'Segment: {s_pair}')
-    st.write(f'Segment Length: {l_pair}')
+    #st.write(f'Segment: {s_pair}')
+    #st.write(f'Segment Length: {l_pair}')
 
     data = {
     'Sequence': s_pair,
