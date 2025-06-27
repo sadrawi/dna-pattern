@@ -72,7 +72,7 @@ if st.button("Find the Patterns"):
             
             for k in range(0,len(datap2)-1):
                 # st.write(datap2[k])
-                seq2.append((s_df['Sequence'][i][datap2[k]+1:datap2[k+1]]))
+                seq2.append((s_df['Sequence'][i][datap2[k]:datap2[k+1]]))
                 # st.write((s_df['Sequence'][i][datap2[k]:datap2[k+1]]))
         # st.write(seq2)
 
