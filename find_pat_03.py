@@ -18,11 +18,6 @@ with col1:
 with col2:
     st.title("i3L Pattern Finding in Sequence")
 
-# col1, col2 = st.columns([1,3])
-
-# with col2:
-#     st.title("[DEV] Find Pattern in Sequence")
-
 # Inputs
 fasta = st.text_area("Enter the sequence", "AGGGCACTCAGGAAACCAGCTCAAGTCCTTATTGAGGTCACTGCGTCTCAAATACCCGGGCTGGGCCTGTGACTCACACACCAGCACCAACAACCAGGGGGTGGGATATTGCATCAGGAAAAGCTCCACTCTGGGTGGAACCTGCTTTTCAACCTCATTGGGTGTGTCACCGCCCAGTGGGTTCACCTTGCCCGCTGCCT")
 pattern1 = st.text_input("Enter the first pattern", "GGG")
